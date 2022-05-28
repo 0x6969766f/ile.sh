@@ -16,6 +16,12 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta property="og:site_name" content="illein.dev" />
+          <meta property="og:title" content="illein.dev" />
+          <meta
+            property="og:description"
+            content="Iivari Leinonen - Iivari Leinonen - #developer, #designer, #human"
+          />
+          <meta property="og:image" content="/share.jpg" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
