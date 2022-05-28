@@ -1,30 +1,39 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
 .main {
-  min-height: 100vh;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
 }
 
 .photo {
-  width: 20rem;
-  height: 20rem;
-  position: relative;
-  overflow: hidden;
   border: 1px solid #ccc;
+  height: 20rem;
   margin-bottom: 2rem;
   outline: 1px solid #303030;
+  overflow: hidden;
+  position: relative;
+  width: 20rem;
 }
 
 .title {
+  cursor: default;
   font-size: 3.5rem;
   font-weight: 100;
-  cursor: default;
   margin-bottom: 0.5rem;
 }
 .title::selection {
-  color: white;
   background-color: var(--pink);
+  color: white;
 }
 
 .description {
@@ -32,16 +41,16 @@
   cursor: default;
 }
 .description::selection {
-  color: white;
   background-color: var(--pink);
+  color: white;
 }
 
 .footer {
-  width: 100%;
-  max-width: 26rem;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  max-width: 26rem;
+  width: 100%;
 }
 
 .footer a {
@@ -53,7 +62,7 @@
 }
 
 .icon {
-  width: 2.5rem;
-  height: 2.5rem;
   fill: inherit;
+  height: 2.5rem;
+  width: 2.5rem;
 }
