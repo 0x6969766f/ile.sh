@@ -19,7 +19,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="illein.dev" />
           <meta
             property="og:description"
-            content="Iivari Leinonen - Iivari Leinonen - #developer, #designer, #human"
+            content="Iivari Leinonen - #developer #designer #human"
           />
           <meta property="og:image" content="/share.jpg" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
