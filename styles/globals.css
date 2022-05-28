@@ -1,16 +1,28 @@
-html,
-body {
-  padding: 0;
+:root {
+  --pink: #ff0099;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+html {
   box-sizing: border-box;
+  font-family: monospace;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "VT323", monospace;
+  font-size: 2.4rem;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
 }
