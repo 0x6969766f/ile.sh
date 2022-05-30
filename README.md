@@ -1,1 +1,1 @@
-Personal website for domain purposes.
+Personal website

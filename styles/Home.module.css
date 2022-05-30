@@ -1,0 +1,68 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+.photo {
+  border: 1px solid #ccc;
+  height: 20rem;
+  margin-bottom: 2rem;
+  outline: 1px solid #303030;
+  overflow: hidden;
+  position: relative;
+  width: 20rem;
+}
+
+.title {
+  cursor: default;
+  font-size: 3.5rem;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+}
+.title::selection {
+  background-color: var(--pink);
+  color: white;
+}
+
+.description {
+  color: var(--pink);
+  cursor: default;
+}
+.description::selection {
+  background-color: var(--pink);
+  color: white;
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 26rem;
+  width: 100%;
+}
+
+.footer a {
+  fill: #afafaf;
+  padding: 1.5rem 1rem;
+}
+.footer a:hover {
+  fill: #303030;
+}
+
+.icon {
+  fill: inherit;
+  height: 2.5rem;
+  width: 2.5rem;
+}
