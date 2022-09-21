@@ -1,0 +1,63 @@
+---
+const title = "illein.dev";
+const description = "Iivari Leinonen - #developer, #designer, #human";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content={description}
+    />
+    <meta property="og:site_name" content={title} />
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content={description}
+    />
+    <meta property="og:image" content="/share.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="true"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=block"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <style>
+      *,
+      *::before,
+      *::after {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: transparent;
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-family: monospace;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "VT323", monospace;
+        font-size: 2.4rem;
+        overflow: hidden;
+        text-rendering: optimizeSpeed;
+      }
+    </style>
+    <slot />
+  </body>
+</html>
