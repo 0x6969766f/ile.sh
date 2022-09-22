@@ -1,1 +1,1 @@
-Personal website with Astro.js 🚀
+🚀 Personal website with Astro.js + Tailwind 🚀
