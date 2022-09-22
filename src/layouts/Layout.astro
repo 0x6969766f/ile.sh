@@ -2,7 +2,7 @@
 const title = "illein.dev";
 const description = "Iivari Leinonen - #developer, #designer, #human";
 ---
-<html lang="en" class="overflow-hidden">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
@@ -31,7 +31,7 @@ const description = "Iivari Leinonen - #developer, #designer, #human";
     />
     <title>{title}</title>
   </head>
-  <body class="fixed h-full overflow-hidden w-full">
+  <body>
     <style>
       *,
       *::before,
@@ -55,7 +55,17 @@ const description = "Iivari Leinonen - #developer, #designer, #human";
         font-family: "VT323", monospace;
         font-size: 2.4rem;
         text-rendering: optimizeSpeed;
+      }
+      
+      html, body {
+        height: 100%;
+      }
+      body {
+        position: fixed;
         -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+        overflow-y: scroll;
+        width: 100vw;
       }
     </style>
     <slot />
