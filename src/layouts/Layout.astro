@@ -31,7 +31,7 @@ const description = "Iivari Leinonen - #developer, #designer, #human";
     />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="overflow-hidden">
     <style>
       *,
       *::before,
@@ -55,17 +55,6 @@ const description = "Iivari Leinonen - #developer, #designer, #human";
         font-family: "VT323", monospace;
         font-size: 2.4rem;
         text-rendering: optimizeSpeed;
-      }
-      
-      html, body {
-        height: 100%;
-      }
-      body {
-        position: fixed;
-        -webkit-overflow-scrolling: touch;
-        overflow-x: auto;
-        overflow-y: scroll;
-        width: 100vw;
       }
     </style>
     <slot />
