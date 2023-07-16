@@ -1,4 +1,6 @@
 ---
+import "../styles/style.css";
+
 const title = "ile.sh";
 const description = "Iivari Leinonen - #developer, #designer, #human";
 ---
@@ -26,37 +28,12 @@ const description = "Iivari Leinonen - #developer, #designer, #human";
       crossorigin="true"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=block"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=block"
       rel="stylesheet"
     />
     <title>{title}</title>
   </head>
-  <body class="overflow-hidden bg-white dark:bg-black text-black dark:text-white">
-    <style>
-      *,
-      *::before,
-      *::after {
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        -webkit-tap-highlight-color: transparent;
-        box-sizing: inherit;
-        margin: 0;
-        padding: 0;
-      }
-
-      html {
-        box-sizing: border-box;
-        font-family: monospace;
-        font-size: 62.5%;
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: "VT323", monospace;
-        font-size: 2.4rem;
-        text-rendering: optimizeSpeed;
-      }
-    </style>
+  <body>
     <slot />
   </body>
 </html>
