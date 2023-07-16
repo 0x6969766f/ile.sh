@@ -11,7 +11,7 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/vercel": "^2.0.0",
+    "@astrojs/vercel": "^3.7.2",
     "astro": "^2.8.3"
   }
 }
