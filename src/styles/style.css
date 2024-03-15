@@ -1,8 +1,7 @@
 :root {
-  --color-mocha-base: #1e1e2e;
-  --color-mocha-text: #cdd6f4;
-  --color-mocha-blue: #89b4fa;
-  --color-mocha-mauve: #cba6f7;
+  --color-grey-dark: #191919;
+  --color-grey-light: #aaa;
+  --color-white: #fff;
   --text-size: 1.8rem;
 }
 
@@ -25,8 +24,8 @@ html {
 }
 
 body {
-  background-color: var(--color-mocha-base);
-  color: var(--color-mocha-text);
+  background-color: var(--color-grey-dark);
+  color: var(--color-grey-light);
   font-family: "JetBrains Mono", monospace;
   font-size: var(--text-size);
   letter-spacing: 0.025rem;
@@ -50,25 +49,76 @@ main {
 
 .profile {
   height: 20rem;
-  margin-bottom: 2rem;
-  overflow: hidden;
   position: relative;
+  transform: rotate(45deg);
   width: 20rem;
+}
+
+.profile::before,
+.profile-bg,
+.profile-bg::before,
+.profile-bg::after {
+  border-radius: 1rem;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 18rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 18rem;
+}
+
+.profile::before,
+.profile-bg,
+.profile-bg::before,
+.profile-bg::after,
+.profile-image {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(170, 170, 170, 0.25);
+}
+
+.profile::before {
+  transform: rotate(67.5deg);
+  z-index: -1;
+}
+
+.profile-bg::before {
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.profile-bg::after {
+  transform: rotate(-67.5deg);
+  z-index: -1;
+}
+
+.profile-image {
+  background-color: rgba(25, 25, 25, 0.9);
+  border-radius: 1rem;
+  height: 18rem;
+  overflow: hidden;
+  width: 18rem;
 }
 
 .profile img {
   height: 100%;
   object-fit: cover;
+  transform: rotate(-45deg);
   width: 100%;
 }
 
 h1 {
+  margin-top: 2rem;
   font-size: var(--text-size);
 }
 
 footer {
   display: flex;
   justify-content: center;
+  margin-top: 0.5rem;
   max-width: 24rem;
   width: 100%;
 }
@@ -86,5 +136,5 @@ footer div {
 }
 
 footer path {
-  fill: var(--color-mocha-mauve);
+  fill: var(--color-grey-light);
 }
